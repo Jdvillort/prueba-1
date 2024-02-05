@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-image: url(./images/campo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba(5,114,8,255);
+        }
+        #tamaño{
+            width: 8rem;
+            height: 8rem;
+        }
+        .portero{
+            position: fixed;
+            top: 27vw;
+            left: 1vw;
+            background-size: cover;
+            background-image: url(./images/jugadores/casillas.jpg);
+            animation: movement 3s;
+        }
+        .defi{
+            position: fixed;
+            top: 5vw;
+            left: 27vw;
+            background-size: cover;
+            background-image: url(./images/jugadores/pepe.jpg);
+            animation-name:ocultar, movement;
+            animation-duration: 3s, 3s;
+            animation-delay: 0s, 3s;
+        }
+        .defci{
+            position: fixed;
+            top: 19vw;
+            left: 18vw;
+            background-size: cover;
+            background-image: url(./images/jugadores/balotelli.jpg);
+            animation-name:ocultar, movement;
+            animation-duration: 6s, 3s;
+            animation-delay: 0s, 6s;
+        }
+        .defcd{
+            position: fixed;
+            top: 35vw;
+            left: 18vw;
+            background-size: cover;
+            background-image: url(./images/jugadores/parejo.jpg);
+            animation-name:ocultar, movement;
+            animation-duration: 9s, 3s;
+            animation-delay: 0s, 9s;
+        }
+        .defd{
+            position: fixed;
+            top: 49vw;
+            left: 27vw;
+            background-size: cover;
+            background-image: url(./images/jugadores/rubi.jpg);
+            animation-name:ocultar, movement;
+            animation-duration: 12s, 3s;
+            animation-delay: 0s, 12s;
+        }
+        .centi{
+            position: fixed;
+            top: 16vw;
+            left: 52vw;
+            background-size: cover;
+            background-image: url(./images/jugadores/ibrahimovic.jpg);
+            animation-name:ocultar, movement;
+            animation-duration: 15s, 3s;
+            animation-delay: 0s, 15s;
+        }
+        .centc{
+            position: fixed;
+            top: 27vw;
+            left: 38vw;
+            background-size: cover;
+            background-image: url(./images/jugadores/Iago\ Aspas.jpg);
+            animation-name:ocultar, movement;
+            animation-duration: 18s, 3s;
+            animation-delay: 0s, 18s;
+        }
+        .centd{
+            position: fixed;
+            top: 38vw;
+            left: 52vw;
+            background-size: cover;
+            background-image: url(./images/jugadores/roberto\ carlos.jpg);
+            animation-name:ocultar, movement;
+            animation-duration: 21s, 3s;
+            animation-delay: 0s, 21s;
+        }
+        .deli{
+            position: fixed;
+            top: 5vw;
+            left: 67vw;
+            background-size: cover;
+            background-image: url(./images/jugadores/mEsSi\ cHiQuiT00.jpeg);
+            animation-name:ocultar, movement;
+            animation-duration: 24s, 3s;
+            animation-delay: 0s, 24s;
+        }
+        .delc{
+            position: fixed;
+            top: 27vw;
+            left: 80vw;
+            background-size: cover;
+            background-image: url(./images/jugadores/csntona.jpg);
+            animation-name:ocultar, movement;
+            animation-duration: 27s, 3s;
+            animation-delay: 0s, 27s;
+        }
+        .deld{
+            position: fixed;
+            top: 49vw;
+            left: 67vw;
+            background-size: cover;
+            background-image: url(./images/jugadores/ronaldo.jpeg);
+            animation-name:ocultar, movement;
+            animation-duration: 30s, 3s;
+            animation-delay: 0s, 30s;
+        }
+
+        @keyframes ocultar{
+            0%{
+                opacity: 0%;
+            }
+            100%{
+                opacity: 0%;
+            }
+        }
+        @keyframes movement{
+            0% {
+                top: -100px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            50% {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(1.5);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="portero" id="tamaño"></div>
+    <div class="defi" id="tamaño"></div>
+    <div class="defci" id="tamaño"></div>
+    <div class="defcd" id="tamaño"></div>
+    <div class="defd" id="tamaño"></div>
+    <div class="centi" id="tamaño"></div>
+    <div class="centc" id="tamaño"></div>
+    <div class="centd" id="tamaño"></div>
+    <div class="deli" id="tamaño"></div>
+    <div class="delc" id="tamaño"></div>
+    <div class="deld" id="tamaño"></div>
+    
+</body>
+</html>
